@@ -99,10 +99,6 @@ body {
   display: inline-flex;
 }
 
-.menu-link.active {
-  color: var(--button-bcg-color);
-}
-
 .menu-item {
   padding-top: 32px;
 }
