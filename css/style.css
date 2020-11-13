@@ -294,9 +294,14 @@ nav a.active {
   right: 8px;
 
   border-radius: 50px;
-
+  cursor: pointer;
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-close:hover .close,
+.btn-close:focus .close {
+  fill: var(--button-bcg-color);
 }
 
 .close {
