@@ -232,6 +232,16 @@ nav a.active {
   position: relative;
 }
 
+.project-card {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  top: 0px;
+  left: auto;
+  background: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+}
+
 .description {
   position: absolute;
   width: 370px;
@@ -239,8 +249,6 @@ nav a.active {
   top: 0px;
   left: auto;
   background: rgba(33, 150, 243, 0.9);
-
-  overflow: hidden;
 
   font-style: normal;
   font-weight: normal;
@@ -252,23 +260,20 @@ nav a.active {
   padding-left: 24px;
 
   color: #ffffff;
-  opacity: 0;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.name-card {
+  padding-top: 314px;
 }
 
 .website:hover .description,
 .website:focus .description {
   transform: translateY(0);
   opacity: 1;
-}
-
-.website:focus::before,
-.description::before {
-  opacity: 0;
-  transform: scaleX(0);
-  transition: transfer 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .project-item:hover,
